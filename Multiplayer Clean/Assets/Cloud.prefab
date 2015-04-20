@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &110764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417404}
+  - 114: {fileID: 11430536}
+  - 114: {fileID: 11459056}
+  - 33: {fileID: 3368208}
+  - 23: {fileID: 2389888}
+  m_Layer: 0
+  m_Name: Cloud
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417404
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2389888
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110764}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: aaf6e69f1c9d74c4b920d43f88551bbc, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3368208
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110764}
+  m_Mesh: {fileID: 0}
+--- !u!114 &11430536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c87f39f14ab6441bacf405168f04ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ParticleData: {fileID: 11432972}
+  m_CreatorData: {fileID: 11440450}
+  m_CloudRendererType: 0
+  m_ParticleMaterial: {fileID: 2100000, guid: aaf6e69f1c9d74c4b920d43f88551bbc, type: 2}
+  m_XTile: 4
+  m_YTile: 4
+  m_Tint: {r: 1, g: 1, b: 1, a: 1}
+  m_VerticalShadingInfluence: .5
+  m_ShadingGroupInfluence: .5
+  m_Scale: 1
+  m_Fading: 1
+  verticalColors:
+  - isPermanent: 1
+    verticalFactor: 0
+    color: {r: .5, g: .5, b: .5, a: 1}
+  - isPermanent: 1
+    verticalFactor: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sun: {fileID: 0}
+  shadingGroups:
+  - name: Shading Group
+    center: {x: 0, y: 0, z: 0}
+    shapeColor: {r: 0, g: 1, b: 0, a: 1}
+  shadingColors:
+  - isPermanent: 1
+    shadingFactor: -1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - isPermanent: 1
+    shadingFactor: 1
+    color: {r: .5, g: .5, b: .5, a: 1}
+--- !u!114 &11432972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0161d150e6ad4139bea8582469b28ec, type: 3}
+  m_Name: ParticleData
+  m_EditorClassIdentifier: 
+  m_Positions: []
+  m_Rotations: []
+  m_Sizes: []
+  m_UVIndices: 
+  m_IsSquareds: 
+  m_IsCoreParticles: 
+  m_ShadingGroupIndices: 
+--- !u!114 &11440450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bf094a16c6c46788bb02d74dfd5e2b, type: 3}
+  m_Name: CreatorData
+  m_EditorClassIdentifier: 
+  density: 1
+  boxShapes: []
+  particleGroups:
+  - name: Particle Group
+    shapeColor: {r: 1, g: .921568632, b: .0156862754, a: 1}
+    particleTypes:
+    - uvIndex: 1
+      minimumRotation: -180
+      maximumRotation: 180
+      squared: 1
+      minimumXSize: 1
+      maximumXSize: 1
+      minimumYSize: 1
+      maximumYSize: 1
+      creationProbability: 1
+--- !u!114 &11459056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5282fa58156294bbd998fa49f859d85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useParticleColor: 0
+  m_MeshFilter: {fileID: 3368208}
+  m_MeshRenderer: {fileID: 2389888}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 110764}
+  m_IsPrefabParent: 1
